@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hhn.wearable.activitymonitor" >
+
+    <uses-feature android:name="android.hardware.type.watch" />
+    <uses-feature android:name="android.hardware.sensor.stepdetector"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name=".SelectGenderActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectWeightActivity"
+            android:label="@string/title_activity_select_weight" >
+        </activity>
+        <activity
+            android:name=".SelectHeightActivity"
+            android:label="@string/title_activity_select_height" >
+        </activity>
+        <activity
+            android:name=".WalkKeeperActivity"
+            android:label="@string/title_activity_walk_keeper" >
+        </activity>
+    </application>
+
+</manifest>
